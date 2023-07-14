@@ -1,4 +1,4 @@
-Orders.array.forEach(order => {
+Orders.forEach(order => {
     const tr = document.createElement('tr')
     const trContent = `
         <td>${order.productName}</td>
@@ -7,4 +7,6 @@ Orders.array.forEach(order => {
         <td class="${order.status === 'Declined' ? 'danger': order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
         <td class="primary">Details</td>
     `
-});
+    tr.innerHTML = trContent
+    document.querySelector('table tbody').appendChild(tr)
+})

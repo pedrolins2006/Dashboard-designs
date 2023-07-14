@@ -16,5 +16,5 @@ const Orders = [
         productNumber: '36452',
         paymentStatus: 'Paid',
         status: 'Active'
-    },
+    }
 ]
